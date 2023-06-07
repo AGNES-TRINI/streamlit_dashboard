@@ -1,1 +1,47 @@
+span.css-10trblm.e16nr0p30
+{
+
+    background-color:#071B4F;
+    font-size: 40px;
+    color:#f5f6fa;
+    text-align: center;
+    border-radius: 20px;
+    border-color: black;
+    padding: 2% 2% 2% 2%;
+}
+
+/* div.css-zt5igj.e16nr0p33>h2
+{
+
+    background-color:lightgrey;
+    font-size: 10px;
+    color:black;
+    border-radius: 20px;
+  
+} */
+
+/* Centering text in each gray box */
+div.css-50ug3q.e16fv1kl3{
+    text-align: center;
+    font-size: 30px;
+  }
+  
+  /* Row 1 */
+  div.css-50ug3q.e16fv1kl3 {
+      background-color: rgba(59, 32, 166, 0.6);
+      font-size: 30px;
+      padding: 2% 2% 2% 2%;
+      border-radius: 5px;
+  }
+  
+  /* Row 2 */
+  div.css-50ug3q.e16fv1kl3 {
+      background-color: rgba(59, 32, 166, 0.6);
+      font-size: 30px;
+      padding: 2% 2% 2% 2%;
+      border-radius: 5px;
+  }
+ 
+  
+
 
