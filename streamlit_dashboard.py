@@ -20,7 +20,7 @@ st.set_page_config(page_title="AP DASHBOARD",
 st.markdown("<h1 style='text-align:center;'>AP DASHBOARD</h1>",unsafe_allow_html=True)
 st.markdown("---")
 
-with open(r"C:\Users\agnes\dash_plotly\style.css") as source_design:
+with open("style.css") as source_design:
     st.markdown(f"<style>{source_design.read()}</style>",unsafe_allow_html=True)
 
 #import data
