@@ -8,8 +8,8 @@ import plotly.express as px
 from streamlit_option_menu import option_menu
 
 
-import toml
-print (toml.load(r"C:\Users\agnes\dash_plotly\[theme].toml"))
+# import toml
+# print (toml.load(r"C:\Users\agnes\dash_plotly\[theme].toml"))
 
 st.set_page_config(page_title="AP DASHBOARD",
                    page_icon="favicon",
