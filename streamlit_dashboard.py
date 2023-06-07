@@ -25,9 +25,9 @@ with open("style.css") as source_design:
 
 #import data
 
-df_overall=pd.read_excel(r"C:\Users\agnes\Downloads\AP Dashboard (1).xlsx",sheet_name="Overall")
+df_overall=pd.read_excel("AP Dashboard (1).xlsx",sheet_name="Overall")
 
-df_ae=pd.read_excel(r"C:\Users\agnes\Downloads\AP Dashboard (1).xlsx",sheet_name="AE")
+df_ae=pd.read_excel("AP Dashboard (1).xlsx",sheet_name="AE")
 
 
 
@@ -164,7 +164,7 @@ if 'number_of_rows' not in st.session_state:
     st.session_state['number_of_rows']=5
     st.session_state['type']='Categorical'
 
-df_overall=pd.read_excel(r"C:\Users\agnes\Downloads\AP Dashboard (1).xlsx",sheet_name="Overall")
+df_overall=pd.read_excel("AP Dashboard (1).xlsx",sheet_name="Overall")
 
 
 
