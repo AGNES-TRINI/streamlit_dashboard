@@ -4,7 +4,6 @@ import streamlit as st
 import plotly.graph_objects as go
 import plotly.io as pio
 import plotly.express as px
-import hydralit_components as hc
 from streamlit_option_menu import option_menu
 import annotated_text as ant
 from annotated_text import annotation
