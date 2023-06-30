@@ -22,20 +22,20 @@ st.set_page_config(page_title="AP DASHBOARD",
 
 # st.markdown("---")
 
-with open(r"C:\Users\agnes\dash_plotly\style.css") as source_design:
+with open("style.css") as source_design:
     st.markdown(f"<style>{source_design.read()}</style>",unsafe_allow_html=True)
 
 #import data
 
-df_overall=pd.read_excel(r"C:\Users\agnes\Downloads\AP Dashboard (1).xlsx",sheet_name="Overall")
+df_overall=pd.read_excel("AP Dashboard (1).xlsx",sheet_name="Overall")
 
-df_ae=pd.read_excel(r"C:\Users\agnes\Downloads\AP Dashboard (1).xlsx",sheet_name="AE")
+df_ae=pd.read_excel("AP Dashboard (1).xlsx",sheet_name="AE")
 
-df_ge=pd.read_excel(r"C:\Users\agnes\Downloads\AP Dashboard (1).xlsx",sheet_name="GE")
+df_ge=pd.read_excel("AP Dashboard (1).xlsx",sheet_name="GE")
 
-df_caste=pd.read_excel(r"C:\Users\agnes\Downloads\AP Dashboard (1).xlsx",sheet_name="caste")
+df_caste=pd.read_excel("AP Dashboard (1).xlsx",sheet_name="caste")
 
-df_elector=pd.read_excel(r"C:\Users\agnes\Downloads\AP Dashboard (1).xlsx",sheet_name="Elector")
+df_elector=pd.read_excel("AP Dashboard (1).xlsx",sheet_name="Elector")
 
 
 with st.sidebar:
@@ -295,15 +295,15 @@ if choose =="Data Summary":
   if selected_database:
     # Load data based on the selected database
     if selected_database == "Overall Data":
-        data=pd.read_excel(r"C:\Users\agnes\Downloads\AP Dashboard (1).xlsx",sheet_name="Overall")
+        data=pd.read_excel("AP Dashboard (1).xlsx",sheet_name="Overall")
     elif selected_database == "Assembly Data":
-        data=pd.read_excel(r"C:\Users\agnes\Downloads\AP Dashboard (1).xlsx",sheet_name="AE")
+        data=pd.read_excel("AP Dashboard (1).xlsx",sheet_name="AE")
     elif selected_database == "General Data":
-        data=pd.read_excel(r"C:\Users\agnes\Downloads\AP Dashboard (1).xlsx",sheet_name="GE")
+        data=pd.read_excel("AP Dashboard (1).xlsx",sheet_name="GE")
     elif selected_database == "Caste Data":
-        data=pd.read_excel(r"C:\Users\agnes\Downloads\AP Dashboard (1).xlsx",sheet_name="caste")
+        data=pd.read_excel("AP Dashboard (1).xlsx",sheet_name="caste")
     elif selected_database == "Electoral Data":
-        data=pd.read_excel(r"C:\Users\agnes\Downloads\AP Dashboard (1).xlsx",sheet_name="Elector")
+        data=pd.read_excel("AP Dashboard (1).xlsx",sheet_name="Elector")
 
     st.write(data)
     st.write("Summary Statistics:", data.describe())
